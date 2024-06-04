@@ -34,7 +34,7 @@ BEGIN Place
 
         BEGIN AccessConstraints
             LineOfSight IncludeIntervals
-            ElevationAngle            Min		  1.0000000000000000e+01 IncludeIntervals
+            ElevationAngle            Min		  5.0000000000000000e+00 IncludeIntervals
 
             UsePreferredMaxStep No
             PreferredMaxStep 360

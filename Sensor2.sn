@@ -1,0 +1,304 @@
+stk.v.12.0
+WrittenBy    STK_v12.8.0
+
+BEGIN Sensor
+
+    Name		 Sensor2
+
+    BEGIN Pattern
+
+        BEGIN SimpleCone
+
+            ConeAngle		  4.0000000000000002e-01
+            AngularPatternResolution		  4.0000000000000000e+00
+
+        END SimpleCone
+
+        DetailedTerrainHorizon		 Yes
+
+
+    END Pattern
+
+    BEGIN Pointing
+
+        BEGIN Targeted
+
+            TargetMode		 Tracking
+            AboutBoresightOption		 323            TrackingMode		 Both
+            AberrationType		 Annual
+            TimeDelayConvergence		 5e-05
+            MaxTimeStep		 360
+            MinTimeStep		 0.01
+            TimeConvergence		 0.005
+            AbsValueConvergence		 1e-14
+            RelValueConvergence		 1e-08
+            DetectEventsUsingSamplesOnly		 No
+
+            BEGIN AssignedTargets
+
+                Place/POL_Middle
+
+            END AssignedTargets
+
+            BEGIN TargetInviews
+
+                Place/POL_Middle 2024-01-01T10:00:00.000000000 2024-01-01T12:23:25.947721819
+                Place/POL_Middle 2024-01-01T14:40:16.256506876 2024-01-01T20:11:11.640685784
+                Place/POL_Middle 2024-01-01T22:28:19.361690607 2024-01-02T05:18:57.890508004
+                Place/POL_Middle 2024-01-02T08:00:13.857550829 2024-01-02T12:15:55.232807798
+                Place/POL_Middle 2024-01-02T14:32:11.063247688 2024-01-02T20:01:19.718476762
+                Place/POL_Middle 2024-01-02T22:19:06.920961148 2024-01-03T05:10:00.623270280
+                Place/POL_Middle 2024-01-03T07:50:47.486117444 2024-01-03T12:08:24.405575677
+                Place/POL_Middle 2024-01-03T14:24:07.118919336 2024-01-03T19:51:27.995946579
+                Place/POL_Middle 2024-01-03T22:09:54.991796273 2024-01-04T05:01:03.012894764
+                Place/POL_Middle 2024-01-04T07:41:19.956137615 2024-01-04T12:00:53.420153964
+                Place/POL_Middle 2024-01-04T14:16:04.426148234 2024-01-04T19:41:36.500656179
+                Place/POL_Middle 2024-01-04T22:00:43.562480087 2024-01-05T04:52:05.062989076
+                Place/POL_Middle 2024-01-05T07:31:51.289914037 2024-01-05T11:53:22.204327469
+                Place/POL_Middle 2024-01-05T14:08:02.989190319 2024-01-05T19:31:45.259917877
+                Place/POL_Middle 2024-01-05T21:51:32.625706272 2024-01-06T04:43:06.771990890
+                Place/POL_Middle 2024-01-06T07:22:21.516679420 2024-01-06T11:45:50.704007059
+                Place/POL_Middle 2024-01-06T14:00:02.812438280 2024-01-06T19:21:54.300306457
+                Place/POL_Middle 2024-01-06T21:42:22.174368751 2024-01-07T04:34:08.133243885
+                Place/POL_Middle 2024-01-07T07:12:50.662937473 2024-01-07T11:38:18.861148128
+                Place/POL_Middle 2024-01-07T13:52:03.896993113 2024-01-07T19:12:03.646943904
+                Place/POL_Middle 2024-01-07T21:33:12.201470348 2024-01-08T04:25:09.147759161
+                Place/POL_Middle 2024-01-08T07:03:18.750028290 2024-01-08T11:30:46.620957239
+                Place/POL_Middle 2024-01-08T13:44:06.241833857 2024-01-08T19:02:13.332141424
+                Place/POL_Middle 2024-01-08T21:24:02.700145393 2024-01-09T04:16:09.812109770
+                Place/POL_Middle 2024-01-09T06:53:45.809177765 2024-01-09T11:23:13.931740211
+                Place/POL_Middle 2024-01-09T13:36:09.844384917 2024-01-09T18:52:23.373607299
+                Place/POL_Middle 2024-01-09T21:14:53.663684034 2024-01-10T04:07:10.124322563
+                Place/POL_Middle 2024-01-10T06:44:11.867664609 2024-01-10T11:15:40.735020179
+                Place/POL_Middle 2024-01-10T13:28:14.699479911 2024-01-10T18:42:33.812877953
+                Place/POL_Middle 2024-01-10T21:05:45.085553431 2024-01-11T03:58:10.082404551
+                Place/POL_Middle 2024-01-11T06:34:36.950972741 2024-01-11T11:08:06.980312128
+                Place/POL_Middle 2024-01-11T13:20:20.799937318 2024-01-11T18:32:44.663789754
+                Place/POL_Middle 2024-01-11T20:56:36.959410906 2024-01-12T03:49:09.683673782
+                Place/POL_Middle 2024-01-12T06:25:01.086379811 2024-01-12T11:00:32.618376415
+                Place/POL_Middle 2024-01-12T13:12:28.135174222 2024-01-12T18:22:55.953727332
+                Place/POL_Middle 2024-01-12T20:47:29.279092923 2024-01-13T03:40:08.925288851
+                Place/POL_Middle 2024-01-13T06:15:24.300961897 2024-01-13T10:52:57.597733000
+                Place/POL_Middle 2024-01-13T13:04:36.695853645 2024-01-13T18:13:07.723836164
+                Place/POL_Middle 2024-01-13T20:38:22.038581787 2024-01-14T03:31:07.804215441
+                Place/POL_Middle 2024-01-14T06:05:46.625558091 2024-01-14T10:45:21.869502422
+                Place/POL_Middle 2024-01-14T12:56:46.467242830 2024-01-14T18:03:19.984567583
+                Place/POL_Middle 2024-01-14T20:29:15.231968447 2024-01-15T03:22:06.317186257
+                Place/POL_Middle 2024-01-15T05:56:08.080532547 2024-01-15T10:37:45.389146768
+                Place/POL_Middle 2024-01-15T12:48:57.433112998 2024-01-15T17:53:32.773821033
+                Place/POL_Middle 2024-01-15T20:20:08.853432445 2024-01-16T03:13:04.460687732
+                Place/POL_Middle 2024-01-16T05:46:28.695329432 2024-01-16T10:30:08.103411886
+                Place/POL_Middle 2024-01-16T12:41:09.574690528 2024-01-16T17:43:46.110029453
+                Place/POL_Middle 2024-01-16T20:11:02.897250240 2024-01-17T03:04:02.228474922
+                Place/POL_Middle 2024-01-17T05:36:48.495524208 2024-01-17T10:22:29.982637690
+                Place/POL_Middle 2024-01-17T12:33:22.870632182 2024-01-17T17:34:00.020569286
+                Place/POL_Middle 2024-01-17T20:01:57.357821587 2024-01-18T02:54:59.621592105
+                Place/POL_Middle 2024-01-18T05:27:07.506243080 2024-01-18T10:14:50.973163279
+                Place/POL_Middle 2024-01-18T12:25:37.297076927 2024-01-18T17:24:14.531917763
+                Place/POL_Middle 2024-01-18T19:52:52.229703800 2024-01-19T02:45:56.635841552
+                Place/POL_Middle 2024-01-19T05:17:25.752455239 2024-01-19T10:07:11.037300323
+                Place/POL_Middle 2024-01-19T12:17:52.827737030 2024-01-19T17:14:29.668647609
+                Place/POL_Middle 2024-01-19T19:43:47.507640476 2024-01-20T02:36:53.261991026
+                Place/POL_Middle 2024-01-20T05:07:43.259197671 2024-01-20T09:59:30.137436199
+                Place/POL_Middle 2024-01-20T12:10:09.434011179 2024-01-20T17:04:45.455817307
+                Place/POL_Middle 2024-01-20T19:34:43.186576582 2024-01-21T02:27:49.498070749
+                Place/POL_Middle 2024-01-21T04:58:00.051737093 2024-01-21T09:51:48.240178882
+                Place/POL_Middle 2024-01-21T12:02:27.088650021 2024-01-21T16:55:01.918423465
+                Place/POL_Middle 2024-01-21T19:25:39.261665402 2024-01-22T02:18:45.339492888
+                Place/POL_Middle 2024-01-22T04:48:16.156006144 2024-01-22T09:44:05.310135055
+                Place/POL_Middle 2024-01-22T11:54:45.750066859 2024-01-22T16:45:19.086558039
+                Place/POL_Middle 2024-01-22T19:16:35.728267167 2024-01-23T02:09:40.781527855
+                Place/POL_Middle 2024-01-23T04:38:31.601540724 2024-01-23T09:36:21.314953473
+                Place/POL_Middle 2024-01-23T11:47:05.389163884 2024-01-23T16:35:36.982036880
+                Place/POL_Middle 2024-01-23T19:07:32.581944277 2024-01-24T02:00:35.819295218
+                Place/POL_Middle 2024-01-24T04:28:46.401712905 2024-01-24T09:28:36.226783085
+                Place/POL_Middle 2024-01-24T11:39:25.969361505 2024-01-24T16:25:55.630524948
+                Place/POL_Middle 2024-01-24T18:58:29.818450549 2024-01-25T01:51:30.447762218
+                Place/POL_Middle 2024-01-25T04:19:00.596025888 2024-01-25T09:20:50.020657597
+                Place/POL_Middle 2024-01-25T11:31:47.450447130 2024-01-25T16:16:15.064818074
+                Place/POL_Middle 2024-01-25T18:49:27.433721885 2024-01-26T01:42:24.661728255
+                Place/POL_Middle 2024-01-26T04:09:14.206183894 2024-01-26T09:13:02.676299151
+                Place/POL_Middle 2024-01-26T11:24:09.791673840 2024-01-26T16:06:35.304295122
+                Place/POL_Middle 2024-01-26T18:40:25.423869689 2024-01-27T01:33:18.455826733
+                Place/POL_Middle 2024-01-27T03:59:27.258531516 2024-01-27T09:05:14.159578076
+                Place/POL_Middle 2024-01-27T11:16:32.950475791 2024-01-27T15:56:56.376615393
+                Place/POL_Middle 2024-01-27T18:31:23.785174128 2024-01-28T01:24:11.824515303
+                Place/POL_Middle 2024-01-28T03:49:39.779374231 2024-01-28T08:57:24.459481101
+                Place/POL_Middle 2024-01-28T11:08:56.883482205 2024-01-28T15:47:18.309677145
+                Place/POL_Middle 2024-01-28T18:22:22.514085759 2024-01-29T01:15:04.762083457
+                Place/POL_Middle 2024-01-29T03:39:51.794960989 2024-01-29T08:49:33.553899521
+                Place/POL_Middle 2024-01-29T11:01:21.544761554 2024-01-29T15:37:41.127963825
+                Place/POL_Middle 2024-01-29T18:13:21.607223669 2024-01-30T01:05:57.262475661
+                Place/POL_Middle 2024-01-30T03:30:03.331511920 2024-01-30T08:41:41.429322729
+                Place/POL_Middle 2024-01-30T10:53:46.886047392 2024-01-30T15:28:04.857251414
+                Place/POL_Middle 2024-01-30T18:04:21.061378100 2024-01-31T00:56:49.318718637
+                Place/POL_Middle 2024-01-31T03:20:14.415277927 2024-01-31T08:33:48.072630705
+
+            END TargetInviews
+
+            SaveTargetAccesses		 Yes
+
+            UseTargetSchedule		 No
+
+            BEGIN Stable
+                Use		 No
+                Mode		 NorthStable
+            END Stable
+            AdjustPointingToTargetsDuringAccessToTargets		 No
+            UseTrackControl		 No
+
+        END Targeted
+
+    END Pointing
+
+    BEGIN Optics
+
+        FocalLength		  1.0000000000000000e+02
+        DetectorPitch		  1.0000000000000000e-03
+        IQConstant		  0.0000000000000000e+00
+        GsdCoefficient		  0.0000000000000000e+00
+
+    END Optics
+
+    BEGIN Extensions
+
+        BEGIN EOIR
+        END EOIR
+
+        BEGIN ExternData
+        END ExternData
+
+        BEGIN ADFFileData
+        END ADFFileData
+
+        BEGIN AccessConstraints
+            FieldOfView IncludeIntervals
+            LineOfSight IncludeIntervals
+
+            UsePreferredMaxStep No
+            PreferredMaxStep 360
+        END AccessConstraints
+
+        BEGIN ObjectCoverage
+        END ObjectCoverage
+
+        BEGIN Desc
+            BEGIN ShortText
+
+            END ShortText
+            BEGIN LongText
+
+            END LongText
+        END Desc
+
+        BEGIN Refraction
+            RefractionModel		 Effective Radius Method
+
+            UseRefractionInAccess		 No
+
+            BEGIN ModelData
+                RefractionCeiling		  5.0000000000000000e+03
+                MaxTargetAltitude		  1.0000000000000000e+04
+                EffectiveRadius		  1.3333333333333299e+00
+
+                UseExtrapolation		 Yes
+
+
+            END ModelData
+        END Refraction
+
+        BEGIN Crdn
+        END Crdn
+
+        BEGIN ChainProcessingDelay
+            ConstantDelay		  0.0000000000000000e+00
+        END ChainProcessingDelay
+
+        BEGIN Graphics
+
+            BEGIN Attributes
+
+                Inherit		 Yes
+                Show		 Yes
+                LineStyle		 0
+                LineWidth		 1
+                PatternColor		 #00ffff
+
+            END Attributes
+
+            BEGIN Display
+
+                NumberOfPatterns		 1
+                PersistenceDuration		  0.0000000000000000e+00
+                PersistenceIgnoreDefChg		 No
+                UpdatesDefnOften		 No
+                MinDisplayAltitude		  0.0000000000000000e+00
+                MaxDisplayAltitude		  1.0000000000000000e+07
+                AltitudeIntersectSense		 Either
+                ShowBothAltCrossings		 No
+                IntersectType		 CentralBody
+                ShowGround		 Yes
+                UseProjectionRadii		 No
+                ExcludeHorizonArcs		 No
+                ForwardPersist		 No
+                FillPersist		 No
+                DsplyTmHidesPersist		 No
+                SpaceLength		  5.0000000000000000e+07
+                TgtExtLength		  0.0000000000000000e+00
+                FOVHalfAngle		 No
+                HalfAngle		  0.0000000000000000e+00
+                ProjDisplay		 Sphere
+                DisplayType		 ConstantRadius
+                DisplayFOVWithConstraints		 No
+                ShowBoresight		 No
+                BoresightMarker		 4
+                BoresightColor		 #ffffff
+                ShowFill		 No
+                FillTranslucency		 0.5
+                ShowOn2DMap		 Yes
+
+            END Display
+
+            BEGIN Swath
+
+                MaxStep		  6.0000000000000000e+01
+                MinStep		  1.0000000000000001e-01
+                CloseSwath		 Yes
+                Tolerance		  4.0000000000000000e+00
+                MatchTolerance		  9.0000000000000000e+01
+                ShowSwath		 No
+                ComputationalMethod		 Numerical
+                Color		 #00ffff
+                LineStyle		 0
+                LineWidth		 1
+                SwathIntervalPtr		
+                BEGIN EVENTINTERVAL
+                    BEGIN Interval
+                        Start		 1 Jan 2024 10:00:00.000000000
+                        Stop		 31 Jan 2024 10:00:00.000000000
+                    END Interval
+                    IntervalState		 Explicit
+                END EVENTINTERVAL
+
+
+            END Swath
+
+            BEGIN DisplayTimes
+                DisplayType		 AlwaysOn
+            END DisplayTimes
+        END Graphics
+
+        BEGIN Swath
+        END Swath
+
+        BEGIN VO
+        END VO
+
+    END Extensions
+
+    BEGIN SubObjects
+
+    END SubObjects
+
+END Sensor
+

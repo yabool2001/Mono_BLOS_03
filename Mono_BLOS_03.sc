@@ -40,8 +40,8 @@ BEGIN Scenario
         END EVENTINTERVAL
 
         EpochUsesAnalStart		 No
-        AnimStartUsesAnalStart		 Yes
-        AnimStopUsesAnalStop		 Yes
+        AnimStartUsesAnalStart		 No
+        AnimStopUsesAnalStop		 No
 
     END Interval
 
@@ -132,8 +132,8 @@ BEGIN Scenario
             LaunchWindowUseEntireTraj		 Yes
             LaunchWindowTrajMETStart		 0
             LaunchWindowTrajMETStop		 900
-            LaunchWindowStart		 0
-            LaunchWindowStop		 0
+            LaunchWindowStart		 9244800
+            LaunchWindowStop		 9331200
             LaunchMETOffset		 0
             LaunchWindowUseSecEphem		 No 
             LaunchWindowUseScenFolderForSecEphem		 Yes
@@ -308,19 +308,19 @@ BEGIN Scenario
 
         BEGIN ReportFavorites
             BEGIN Class
-                Name		 FigureOfMerit
-                BEGIN Favorite
-                    Type		 Report
-                    BaseDir		 Install
-                    Style		 Grid Stats
-                END Favorite
-            END Class
-            BEGIN Class
                 Name		 CoverageDefinition
                 BEGIN Favorite
                     Type		 Report
                     BaseDir		 Install
                     Style		 Percent Coverage
+                END Favorite
+            END Class
+            BEGIN Class
+                Name		 FigureOfMerit
+                BEGIN Favorite
+                    Type		 Report
+                    BaseDir		 Install
+                    Style		 Grid Stats
                 END Favorite
             END Class
         END ReportFavorites
@@ -387,6 +387,12 @@ BEGIN Scenario
 
         BEGIN SOCDb
             BEGIN Defaults
+                BEGIN Catalog Spacecraft
+                    BEGIN Criteria Name or ID
+                        Type		 Value
+                        Value		 ISS
+                    END Criteria
+                END Catalog
             END Defaults
         END SOCDb
 
@@ -536,12 +542,6 @@ BEGIN Scenario
         END ExportDataFile
 
         BEGIN Desc
-            BEGIN ShortText
-
-            END ShortText
-            BEGIN LongText
-
-            END LongText
         END Desc
 
         BEGIN RfEnv
@@ -1543,12 +1543,13 @@ BEGIN Scenario
             BEGIN Animation
 
                 StartTime		 1 Jan 2024 10:00:00.000000000
-                EndTime		 31 Jan 2024 10:00:00.000000000
-                CurrentTime		 15 Jan 2024 14:18:00.000000000
+                EndTime		 3 Jan 2024 10:00:00.000000000
+                CurrentTime		 1 Jan 2024 10:00:00.000000000
+                Mode		 Stop
                 Direction		 Forward
-                UpdateDelta		 180
-                RefreshDelta		 0.010000
-                XRealTimeMult		 1
+                UpdateDelta		 60
+                RefreshDelta		 HighSpeed
+                XRealTimeMult		 1800
                 RealTimeOffset		 0
                 XRtStartFromPause		                Yes		
                 TimeArrayIncrement		 1
@@ -1630,8 +1631,8 @@ BEGIN Scenario
                     BEGIN MapAttributes
                         PrimaryBody		 Earth
                         SecondaryBody		 Sun
-                        CenterLatitude		 0
-                        CenterLongitude		 0
+                        CenterLatitude		 45.86695376109789
+                        CenterLongitude		 36.9916646125566
                         ProjectionAltitude		 63621860
                         FieldOfView		 35
                         OrthoDisplayDistance		 20000000
@@ -1654,7 +1655,7 @@ BEGIN Scenario
                         ShowImageNames		 Off
                         ImageNameFont		 0
                         Projection		 EquidistantCylindrical
-                        Resolution		 VeryLow
+                        Resolution		 High
                         CoordinateSys		 ECF
                         UseBackgroundImage		 On
                         UseBingForBackground		 On
@@ -1667,10 +1668,10 @@ BEGIN Scenario
                         UseCloudsFile		 Off
                         BEGIN ZoomLocations
                             BEGIN ZoomLocation
-                                CenterLat		 0
-                                CenterLon		 0
-                                ZoomWidth		 360
-                                ZoomHeight		 180
+                                CenterLat		 45.86695376109789
+                                CenterLon		 36.9916646125566
+                                ZoomWidth		 100.4193907488
+                                ZoomHeight		 56.4859072962
                             END ZoomLocation
                         END ZoomLocations
                         UseVarAspectRatio		 No
@@ -1787,9 +1788,10 @@ BEGIN Scenario
                     BEGIN RecordMovie
                         OutputFormat		 VIDEO
                         SdfSelected		 No
-                        BaseName		 Frame
+                        Directory		 C:\Users\mzeml\stk\Mono_BLOS_03
+                        BaseName		 Movie 01 Beams
                         Digits		 4
-                        Frame		 0
+                        Frame		 2880
                         LastAnimTime		 0
                         OutputMode		 Normal
                         HiResAssembly		 Assemble
@@ -2307,17 +2309,26 @@ BEGIN Scenario
         Instance CoverageDefinition/POL_Cov_Def/FigureOfMerit/CovTime_Perc_FoM
         END Instance
         Instance Place/POL_Middle
-            *		
             CoverageDefinition/POL_Cov_Def		
             Place/POL_Middle		
+            Satellite/POLHEO1/Sensor/Sensor1		
+            Satellite/POLHEO2/Sensor/Sensor2		
         END Instance
         Instance Satellite/POLHEO1
             CoverageDefinition/POL_Cov_Def		
             Satellite/POLHEO1		
+            Satellite/POLHEO1/Sensor/Sensor1		
+        END Instance
+        Instance Satellite/POLHEO1/Sensor/Sensor1
+            Satellite/POLHEO1/Sensor/Sensor1		
         END Instance
         Instance Satellite/POLHEO2
             CoverageDefinition/POL_Cov_Def		
             Satellite/POLHEO2		
+            Satellite/POLHEO2/Sensor/Sensor2		
+        END Instance
+        Instance Satellite/POLHEO2/Sensor/Sensor2
+            Satellite/POLHEO2/Sensor/Sensor2		
         END Instance
     END References
 

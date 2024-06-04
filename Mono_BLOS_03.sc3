@@ -149,9 +149,10 @@ BEGIN SceneWindow
         BEGIN RecordMovie
             OutputFormat		 VIDEO
             SdfSelected		 No
-            BaseName		 VOsnap
+            Directory		 C:\Users\mzeml\stk\Mono_BLOS_03
+            BaseName		 Movie 02 Beams
             Digits		 4
-            Frame		 0
+            Frame		 2880
             LastAnimTime		 0
             OutputMode		 Normal
             HiResAssembly		 Assemble
@@ -690,28 +691,28 @@ BEGIN SceneWindow
         RubberBandRGB		 0.6600000262260437 0.6600000262260437 0.6600000262260437
         BEGIN View
             ViewName		 STKVOInitialView
-            ViewTime		 0
+            ViewTime		 9244800
             ViewUpdateDelta		 10
             CentralBody		 Earth
             BEGIN ViewCrdnAxes
                 BEGIN AXES
                     Type		 AXES_LINKTO
-                    Name		 TopoCentric
-                    RelativePath		 Place/POL_Middle
+                    Name		 Inertial
+                    AbsolutePath		 CentralBody/Earth
                 END AXES
             END
             BEGIN FromViewCrdnPoint
                 BEGIN POINT
                     Type		 POINT_LINKTO
                     Name		 Center
-                    RelativePath		 Place/POL_Middle
+                    AbsolutePath		 CentralBody/Earth
                 END POINT
             END
             BEGIN ToViewCrdnPoint
                 BEGIN POINT
                     Type		 POINT_LINKTO
                     Name		 Center
-                    RelativePath		 Place/POL_Middle
+                    AbsolutePath		 CentralBody/Earth
                 END POINT
             END
             fov		 0.7853981633974483
@@ -727,24 +728,24 @@ BEGIN SceneWindow
             ZoomUseDistanceToCb		 Yes
             GlobeDetailLevel		 1
             UseLayer		 Yes
-            FromName		 "Place/POL_Middle"
+            FromName		 "Earth"
             FromRegPosAttView		 "Point"
-            FromPosition		 -7.4754509421431422e+07 -1.7995603314721198e+06 -9.1084209776596315e+06
-            FromOffset		 -7.8612255115699783e+07 -9.9609725856549200e+05 -1.4106982983088814e+07
-            FromOffsetLLR		 -8.2056149039160542e-01 -2.8232268461269210e+00  7.9874187526444003e+07
-            ToName		 "Place/POL_Middle"
+            FromPosition		  1.5580794744164878e+04  2.9657302161384700e+05  2.8646813033418242e+07
+            FromOffset		  1.5580794744164878e+04  2.9657302161384700e+05  2.8646813033418242e+07
+            FromOffsetLLR		  1.5604296805025983e+00  1.5183084646353162e+00  2.8648352400966015e+07
+            ToName		 "Earth"
             ToRegPosAttView		 "Point"
-            ToPosition		  3.8577456942683556e+06 -8.0346307290662779e+05  4.9985620054291813e+06
+            ToPosition		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
             ToOffset		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
             ToOffsetLLR		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
             ConstantDistanceType		 None
             ConstantDistanceValue		 1
-            UpVector		 -1.7071267752622421e-01 -1.9775106158005484e-01  9.6527286265376233e-01
-            ViewRad		  7.9874187526444018e+07
-            ViewQuat		  9.0541525691370495e-01  6.3224970632943259e-02 -3.9382396941300507e-01  1.4535644723278596e-01
+            UpVector		  1.6699109665012862e-01 -9.8590650672466007e-01  1.0116008974157688e-02
+            ViewRad		  2.8648352400966015e+07
+            ViewQuat		  5.4234416364901605e-01  4.5342130119680546e-01  5.3791367256644174e-01 -4.5926115951920887e-01
             ViewCoordSystem		 From
             ViewFromToMode		 FromTo
-            ViewToCBIMtx		  7.7062377727669096e-01 -1.6134214015797449e-01 -6.1652875659213968e-01  2.0453122636924725e-01  9.7885990665128808e-01 -5.1048067893917637e-04  6.0357764317086582e-01 -1.2570599412866656e-01  7.8733222447987417e-01
+            ViewToCBIMtx		  1.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
             UseUpAxis		 Yes
             UpAxisType		 Z
             UserDefinedUpAxis		  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
@@ -755,9 +756,9 @@ BEGIN SceneWindow
             MinAngleToUpAxis		  8.7266462599716477e-03
             InitUpAxisUp		 Yes
             TempUpAxisUp		 Yes
-            CrossAxis		 -3.1301490783204533e-01  9.4974821267265153e-01  0.0000000000000000e+00
-            DefaultOffset		  1.8749999999999997e+02
-            BaseDefaultOffset		  1.4999999999999997e+02
+            CrossAxis		  9.8595695629627533e-01  1.6699964170915005e-01 -0.0000000000000000e+00
+            DefaultOffset		  3.5079753500000000e+07
+            BaseDefaultOffset		  6.3781370000000000e+06
         END View
 
         BEGIN ViewPathManagerSceneInfo

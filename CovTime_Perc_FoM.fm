@@ -12,9 +12,9 @@ BEGIN FigureOfMerit
             TimeType		 Percent
 
         END CoverageTime
-        ApplySatisfaction		 No
-        SatisfactionType		 Above
-        SatisfactionThreshold		  0.0000000000000000e+00
+        ApplySatisfaction		 Yes
+        SatisfactionType		 AtLeast
+        SatisfactionThreshold		  1.0000000000000000e+02
         NotExecutedValue		  0.0000000000000000e+00
         UseFOMValueRangeCheck		 0
         ExcludeValuesInRange		 0
@@ -36,12 +36,6 @@ BEGIN FigureOfMerit
         END ADFFileData
 
         BEGIN Desc
-            BEGIN ShortText
-
-            END ShortText
-            BEGIN LongText
-
-            END LongText
         END Desc
 
         BEGIN Graphics
